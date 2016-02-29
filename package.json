@@ -1,0 +1,36 @@
+{
+  "name": "test_application",
+  "version": "1.0.0",
+  "description": "this example is written to run a BDD and TDD test using protractor and mocha-chai ...",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test",
+    "bdd",
+    "tdd",
+    "mocha",
+    "chai",
+    "protractor"
+  ],
+  "author": "TRIMECH Mohamed Habib",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "jade": "~1.11.0",
+    "morgan": "~1.6.1",
+    "mortalkombat": "0.0.1",
+    "serve-favicon": "~2.3.0",
+    "underscore.string": "^3.2.3"
+  },
+  "devDependencies": {
+    "grunt-protractor-coverage": "^0.2.16"
+  }
+}
