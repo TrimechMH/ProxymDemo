@@ -34,8 +34,9 @@
 
 ### Install
 
-``` cd ProxymDemo
-    npm install
+``` 
+cd ProxymDemo
+npm install
 ```
 
 ### Running the server 
