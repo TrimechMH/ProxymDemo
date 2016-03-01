@@ -14,7 +14,7 @@
 
 ## Prerequisites
 
-* Node js
+* Node js  [node.js]
 * NPM
 * Protractor
 
@@ -51,3 +51,6 @@
 > Under the test Folder run the following command
 
 ``` protractor ```
+
+
+ [node.js]: <http://nodejs.org>
