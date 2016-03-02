@@ -14,7 +14,7 @@
 
 ## Prerequisites
 
-* [node.js]
+* [Node.js]
 * [NPM]
 * [Protractor]
 
@@ -54,6 +54,6 @@ npm install
 ``` protractor ```
 
 
- [node.js]: <http://nodejs.org>
+ [Node.js]: <http://nodejs.org>
  [Npm]: <https://www.npmjs.com/>
  [Protractor]: <http://angular.github.io/protractor/#/>
