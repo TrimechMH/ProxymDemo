@@ -26,23 +26,44 @@ exports.config = {
 
     /**
      * Framework to use. Jasmine is recommended.
-      */
-
+     */
     framework: 'jasmine',
 
     /**
      * Spec patterns are relative to the current working directly when
      * protractor is called.
      */
-
     specs: ['./e2e/*.spec.js'],
+
+    /**
+     * onPrepare function for configuration of the report files
+     * and the screen shot tests result
+     */
+    onPrepare: function () {
+
+        // configuration to Get a jasmine reportes for the  test executed
+        var jasmineReporters = require('jasmine-reporters');
+        jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
+            consolidateAll: true,
+            savePath: './test/report/protractor',
+            filePrefix: 'xmloutput'
+        }));
+        // we will add this code to activate the protractor screens shot reporter
+        var HtmlScreenshotReporter = require('protractor-jasmine2-screenshot-reporter');
+        var time = Date.now();
+        jasmine.getEnv().addReporter(
+            new HtmlScreenshotReporter({
+                dest: './test/report/protractor/screen/' + time,
+                filename: 'my-report.html'
+            })
+        );
+    },
 
     /**
      * Options to be passed to Jasmine.
      */
-
     jasmineNodeOpts: {
-        showColors:true,
+        showColors: true,
         defaultTimeoutInterval: 5000 // set the timeout for responding
     }
 };

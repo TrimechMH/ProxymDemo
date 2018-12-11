@@ -7,7 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cd UT && mocha ./calculator.js -R spec",
+    "serve": "nodemon server.js",
+    "e2e": "cd test && protractor"
   },
   "keywords": [
     "test",
@@ -31,6 +33,15 @@
     "underscore.string": "^3.2.3"
   },
   "devDependencies": {
-    "grunt-protractor-coverage": "^0.2.16"
+    "grunt-protractor-coverage": "^0.2.16",
+    "protractor-snapshot": "^1.2.0",
+    "jasmine-reporters": "^2.0.0",
+    "protractor-jasmine2-screenshot-reporter": "^0.3.0",
+    "chai": "^3.5.0",
+    "cucumber": "^0.9.4",
+    "jscoverage": "^0.6.0",
+    "mocha": "^2.4.5",
+    "superagent": "^1.7.2",
+    "zombie": "^4.2.1"
   }
 }
