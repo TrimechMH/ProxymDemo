@@ -41,7 +41,6 @@
     "cucumber": "^0.9.4",
     "jscoverage": "^0.6.0",
     "mocha": "^2.4.5",
-    "superagent": "^1.7.2",
     "zombie": "^4.2.1"
   }
 }
